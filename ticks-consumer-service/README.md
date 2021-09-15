@@ -58,16 +58,16 @@ The REST APIs to the tick consumer service are described below.
 
 Note: API `GET /ticks/{ric}` is protected, please generate the JWT Token using API `GET /generatetoken`
 
-###Add new ticks
+### Add new ticks
 
 `POST /ticks`
 curl --location --request POST 'http://localhost:8080/ticks' \ --header 'Content-Type: application/json' \ --data-raw '{"TIMESTAMP":"{TIMESTAMP}","PRICE":"{PRICE}","CURRENCY":"{CURRENCY}","RIC" : "{RIC}"}'
 
-###Generate JWT Token
+### Generate JWT Token
 `POST /generatetoken`
 curl --location --request POST 'http://localhost:8080/generateToken' \--header 'Content-Type: application/json' \--data-raw '{"username":"admin","password":"admin123"}'`
 
-###Fetch all ticks for a given RIC if user has ADMIN role
+### Fetch all ticks for a given RIC if user has ADMIN role
 
 `GET /ticks/{ric}`
 curl --location --request GET 'http://localhost:8080/ticks/ABC' \--header 'Content-Type: application/json' \--header 'Authorization: Bearer {token}'
