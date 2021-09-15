@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ticks-export-service
+  main:
+    banner-mode: off
+springdoc:
+  swagger-ui:
+    path: api-docs.html
+
+logging:
+  level:
+    org.springframework: OFF
+    com.solactive: OFF
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+
+consumer:
+  service:
+    uri: http://localhost:8080
+
+credentials:
+  username: admin
+  password: admin123
