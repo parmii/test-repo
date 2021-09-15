@@ -20,6 +20,7 @@ For building and running the application you need:
 - JWT token is required to call Tick Lookup API (`GET /ticks/{ric}`)
 - Generate the token using API `POST /generatetoken`, details given below.
 - One static user is created for authentication and authorization with username `admin` and password `admin123`
+
 ##Assumptions
 - Only Tick Lookup API (`GET /ticks/{ric}`) needs to be protected and rest of the APIs should be open(no authentication or authorization)
 - There could be multiple close prices
