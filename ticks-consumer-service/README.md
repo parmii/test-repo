@@ -7,7 +7,7 @@ For building and running the application you need:
 - [JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - [Maven 3](https://maven.apache.org)
 
-##Approach
+## Approach
 - Created two microservices, tick-consumer-service and tick-export-service
 - Full API documentation for tick-consumer-service is available on http://localhost:8080/api-docs.html
 - Full API documentation for tick-export-service is available on http://localhost:8081/api-docs.html
@@ -21,7 +21,7 @@ For building and running the application you need:
 - Generate the token using API `POST /generatetoken`, details given below.
 - One static user is created for authentication and authorization with username `admin` and password `admin123`
 
-##Assumptions
+## Assumptions
 - Only Tick Lookup API (`GET /ticks/{ric}`) needs to be protected and rest of the APIs should be open(no authentication or authorization)
 - There could be multiple close prices
 - Close price is optional
